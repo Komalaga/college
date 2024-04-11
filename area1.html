@@ -1,0 +1,53 @@
+<style>
+body
+{
+background-color:powderblue;
+}
+</style>
+
+<h1 style="color:red;font-size:40px">
+<center>
+<u><b>Marwari College,Ranchi</b></u>
+</center>
+</h1>
+<h3>
+<center>
+<b>A Constituent Unit Of Ranchi University, Ranchi<br>
+NAAC Accredited Institution</b>
+</center>
+</h3>
+<img src="clogo.png"  style="position:absolute;top:0px;left:420px;height:120px;width:120px;border-radius:100px">
+
+<div style="position:absolute;top:150px;left:350px;height:40px;width:750px;border:solid;font-size:25px;background-color:Yellow">
+&nbsp;&nbsp;
+
+<a href="reg.html" target="f2">Register</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="login.html" target="f2">Login</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about.html" target="f2">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="cont.html" target="f2">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="addm.html" target="f2">Admission</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+<div style="position:absolute;top:150px;left:1150px;height:35px;width:300px;border:solid;font-size:25px;background-color:lightgreen">
+<center>
+select
+<script>
+function a()
+{
+str=n.value
+if(str=="e" || str=="E")
+document.getElementById("op").innerHTML="<option>Examination</option><option>Extra co-curricular</option><option>Email</Email>"
+if(str=="p" || str=="P")
+document.getElementById("op").innerHTML="<option>Placement Cell</option><option>Pay Fee</option><option>Principal</option>"
+if(str=="a" || str=="A")
+document.getElementById("op").innerHTML="<option>Apply CLC</option><option>Application form</option><option>Administration</option><option>Admission</option>"
+if(str=="c" || str=="C")
+document.getElementById("op").innerHTML="<option>CLC</option><option>Chancellor Portal</option><option>Courses</option><option>College Details</option>"
+}
+</script>
+<input list="op" name="select" id="n" onkeyup="a()">
+<datalist id="op">
+<option></option>
+</datalist>
+</center>
+</div>

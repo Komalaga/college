@@ -1,0 +1,283 @@
+<script>
+function a1()
+{
+document.getElementById("reg")style="display:block";
+document.getElementById("log").style="display:none"
+}
+function a2()
+{
+document.getElementById("log")style="display:block";
+document.getElementById("reg").style="display:none"
+}
+</script>
+
+<div style="width:1200px;height:40px">
+<button onclick="a1()">Register</button>
+<button onclick="a2()">Login</button>
+<button >About Us</button>
+<button >Contact</button>
+<button >Admission</button>
+</div>
+
+<div id="reg" style="display:none">
+
+<script>
+function valid()
+{
+str=e.value
+c1=str.indexOf("@")
+c2=str.indexOf(".com")
+if(c1==-1 || c2==-1)
+{
+document.getElementById("e1").innerHTML="Invalid email id must have @ and .com";
+return false;
+}
+else
+document.getElementById("e1").innerHTML="" 
+num=parseInt(m.value)
+d=0
+for(i=num;i>0;i=parseInt(i/10))
+d++;
+if(d!=10)
+{
+document.getElementById("m1").innerHTML="Invalid mobile no must be of 10 dogits";
+return false;
+}
+else
+document.getElementById("m1").innerHTML="" 
+pass=p.value;
+if(pass.length<6)
+{
+document.getElementById("p1").innerHTML="Invalid password must be at least of 6 char";
+return false;
+}
+else
+document.getElementById("p1").innerHTML="" 
+}
+</script>
+<style>
+body
+{
+background-color:skyblue;
+}
+</style>
+<h1><center>Welcome to Marwari College,Ranchi</center></h1>
+<h2><center><u>Registration Portal</u></center></h2>
+
+<div style="position:absolute;top:100px;left:250px;height:600px;width:1000px;border:solid;background-color:white">
+<h1>
+<center>
+<u>Marwari College,Ranchi</u>
+</center>
+</h1>
+
+<form onsubmit="return valid()" action="save.php">
+
+<div style="position:absolute;top:100px;left:0px;height:500px;width:500px;background-color:white">
+<table>
+<tr>
+<td>NAME<font color="red">*</font></td>
+<td><input type="text" required></td>
+</tr>
+<tr>
+<td>ROLLNO</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>DOB</td>
+<td><input type="Date"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="text" id="e" onchange="valid()"><font color="red" id="e1"></td>
+</tr>
+<tr>
+<td>COURSE</td>
+<td>
+<select>
+<OPTION>SELECT COURSE</OPTION>
+<option>BCA</option>
+<option>IT</option>
+<option>BCS</option>
+<option>BCM</option>
+<option>MCA</option>
+<option>BBA</option>
+
+</select>
+</td>
+
+<tr>
+<td>Select Languages</td>
+<td><input type="checkbox">Hin<input type="checkbox">Eng
+<input type="checkbox">Nag
+</td>
+</tr>
+
+
+</table>
+</div>
+
+<div style="position:absolute;top:100px;left:500px;height:500px;width:500px;background-color:white">
+<table>
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="g">M<input type="radio" name="g">F</td>
+</tr>
+<tr>
+<td>Select Category</td>
+<td><input type="radio" name="g">GEN<input type="radio" name="g">ST<input type="radio" name="g">SC<input type="radio" name="g">OBC
+</td>
+</tr>
+<tr>
+<td>Nationality</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Phone no.<font color="red">*</font></td>
+<td><input type="number" id="m" onchange="valid()" required><font color="red" id="p1"</td>
+</tr>
+<TR>
+<TD>ADDRESS</td>
+<td><textarea rows="7" cols="36"></textarea></td>
+</tr>
+<tr>
+<td>Blood Group</td>
+<td><input type="text"></td></tr>
+<tr>
+<td>Aadhar Number<font color="red">*</font></td>
+<td><input type="text" required></td></tr>
+<tr>
+<td>Upload Matriculation Certificate<font color="red">*</font></td>
+<td><input type="file" required></td>
+</tr>
+<tr>
+<td>Upload Intermediate Certificate<font color="red">*</font></td>
+<td><input type="file" required></td>
+</tr>
+<tr>
+<td>Upload Signature<font color="red">*</font></td>
+<td><input type="file" required></td>
+</tr>
+<tr>
+<td>Upload Recent Image<font color="red">*</font></td>
+<td><input type="file" required></td>
+</tr>
+</table>
+</div>
+
+<div style="position:absolute;top:300px;left:0px;height:200px;width:480px;background-color:white">
+<table>
+<tr>
+<td>Father's Name</td>
+<td><input type="text"></td></tr>
+<tr>
+<td>Father's Occupation</td>
+<td><input type="text"></td></tr>
+<tr>
+<td>Phone no.</td>
+<td><input type="text"></td></tr>
+
+<tr>
+
+<td>Mother's Name</td>
+<td><input type="text"></td></tr>
+<tr>
+<td>Mother's Occupation</td>
+<td><input type="text"></td></tr>
+<tr>
+<td>Phone no.</td>
+<td><input type="text"></td></tr>
+</table>
+</div>
+<div style="position:absolute;top:500px;left:400px;height:20px;width:80px;background-color:white">
+<table>
+<tr>
+<td><input type="submit" value="REGISTER"></td>
+<td><input type="RESET"></td>
+</tr>
+</table>
+</div>
+</form>
+</div>
+
+<p style="font-size:20px;position:absolute;top:0px;left:10px;"><a href="index.html">&#127968HOME</a></p>
+<p style="font-size:20px;position:absolute;top:50px;left:10px;"><u>&#128222<b> Techincian Help</b></u><br>10:00 A.M to 4:00 P.M<br>0651- 221 3134</p>
+<p style="font-size:20px;position:absolute;top:140px;left:10px;">&#128205 Marwari College, Ranchi<br> Near Swami Vivekanand <br>Sarovar Lake Road,<br> Hindpiri, Ranchi <br>Jharkhand-834001</p>
+
+</div>
+
+
+<div id="log" style="display:none">
+
+<script>
+function valid()
+{
+count=0
+pass=p.value;
+if(pass=="!" || pass=="@" || pass=="#" || pass=="$" || pass=="%" || pass=="^" || pass=="&" || pass=="*" )
+count++
+
+if(pass.length<6 && count==0)
+{
+document.getElementById("p1").innerHTML="Invalid password must be at least of 6 char";
+return false;
+}
+else
+document.getElementById("p1").innerHTML="" 
+}
+</script>
+
+<style>
+body
+{
+background-color:skyblue;
+}
+</style>
+<h1><center>Welcome to Marwari College,Ranchi</center></h1>
+
+<p style="font-size:20px;position:absolute;top:0px;left:10px;"><a href="index.html">&#127968HOME</a></p>
+<p style="font-size:20px;position:absolute;top:50px;left:10px;"><u>&#128222<b> Techincian Help</b></u><br>10:00 A.M to 4:00 P.M<br>0651- 221 3134</p>
+<p style="font-size:20px;position:absolute;top:140px;left:10px;">&#128205 Marwari College, Ranchi<br> Near Swami Vivekanand Sarovar Lake Road,<br> Hindpiri, Ranchi Jharkhand-834001</p>
+
+<div style="position:absolute;top:80px;left:450px;height:300px;width:1000px;border:solid;background-color:white">
+<h1>
+<center>
+<u><p style="font-size:30px">&#128274 EXISTING USER</p></u>
+</center>
+<div style="position:absolute;top:120px;left:200px;height:160px;width:500px;background-color:white">
+<table>
+<tr>
+
+<td>REGISTRATION NUMBER <font color="red">*</font></td>
+<td><input type="text" required></td>
+
+</tr>
+<tr>
+<td>PASSWORD<font color="red">*</font></td>
+<td><input type="password" id="p" onchange="valid()"><font color="red" id="p1" required></font></td>
+</tr>
+<tr>
+<td>DOB<font color="red">*</font></td>
+<td><input type="Date" required></td>
+</tr>
+</table>
+
+<font color="blue" size="2"><i>Forgot Password ?</i></font>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<button>LOGIN</button>
+</div>
+
+</center>
+</h1>
+
+</div>
+
+
+<div style="position:absolute;top:150px;left:350px;height:40px;width:750px;border:solid;font-size:25px;background-color:Yellow">
+&nbsp;&nbsp;<a href="reg.html" target="f2">Register</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="login.html" target="f2">login</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about.html" target="f2">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" target="f2">Courses</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" target="f2">Contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" target="f2">Admission</a>
+</div>

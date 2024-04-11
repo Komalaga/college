@@ -1,0 +1,61 @@
+<script>
+function valid()
+{
+count=0
+pass=p.value;
+if(pass=="!" || pass=="@" || pass=="#" || pass=="$" || pass=="%" || pass=="^" || pass=="&" || pass=="*" )
+count++
+
+if(pass.length<6 && count==0)
+{
+document.getElementById("p1").innerHTML="Invalid password must be at least of 6 char";
+return false;
+}
+else
+document.getElementById("p1").innerHTML="" 
+}
+</script>
+
+<style>
+body
+{
+background-color:skyblue;
+}
+</style>
+<h1><center>Welcome to Marwari College,Ranchi</center></h1>
+
+<p style="font-size:20px;position:absolute;top:0px;left:10px;"><a href="index.html">&#127968HOME</a></p>
+<p style="font-size:20px;position:absolute;top:50px;left:10px;"><u>&#128222<b> Techincian Help</b></u><br>10:00 A.M to 4:00 P.M<br>0651- 221 3134</p>
+<p style="font-size:20px;position:absolute;top:140px;left:10px;">&#128205 Marwari College, Ranchi<br> Near Swami Vivekanand Sarovar Lake Road,<br> Hindpiri, Ranchi Jharkhand-834001</p>
+
+<div style="position:absolute;top:80px;left:450px;height:300px;width:1000px;border:solid;background-color:white">
+<h1>
+<center>
+<u><p style="font-size:30px">&#128274 EXISTING USER</p></u>
+</center>
+<div style="position:absolute;top:120px;left:200px;height:160px;width:500px;background-color:white">
+<table>
+<tr>
+
+<td>REGISTRATION NUMBER <font color="red">*</font></td>
+<td><input type="text" required></td>
+
+</tr>
+<tr>
+<td>PASSWORD<font color="red">*</font></td>
+<td><input type="password" id="p" onchange="valid()"><font color="red" id="p1" required></font></td>
+</tr>
+<tr>
+<td>DOB<font color="red">*</font></td>
+<td><input type="Date" required></td>
+</tr>
+</table>
+
+<font color="blue" size="2"><i>Forgot Password ?</i></font>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<button>LOGIN</button>
+</div>
+
+</center>
+</h1>
+
